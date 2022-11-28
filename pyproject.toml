@@ -9,22 +9,10 @@ dataeng = 'dataeng.cli:app'
 
 [tool.poetry.dependencies]
 python = "~3.8"
-pandas = "^1.4.2"
-google-cloud-storage = "^2.3.0"
-python-dotenv = "^0.20.0"
-pandas-gbq = "^0.17.5"
-openpyxl = "^3.0.10"
-pendulum = "^2.1.2"
-progressbar2 = "^4.0.0"
-pandas-profiling = "^3.2.0"
-requests = "^2.27.1"
-prompt-toolkit = "^3.0.29"
-typer = "^0.4.1"
-cryptography = "^37.0.4"
-PyJWT = "^2.4.0"
-faker = "^15.3.3"
+Faker = "^15.3.3"
 jsf = "^0.4.0"
 
+
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=1.2.0"]
 build-backend = "poetry.core.masonry.api"

@@ -14,11 +14,12 @@ faker = JSF(
     {
         "type": "object",
         "properties": {
+            "id": {"type": "string", "$provider": "faker.uuid"},
             "name": {"type": "string", "$provider": "faker.name"},
             "email": {"type": "string", "$provider": "faker.email"},
-            "text": {"type": "string", "$provider": "faker.text"}
+            "description": {"type": "string", "$provider": "faker.text"}
         },
-        "required": ["name", "email", "text"],
+        "required": ["id", "name", "email", "description"],
     }
 )
 
