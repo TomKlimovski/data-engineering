@@ -10,10 +10,6 @@ K, M, G = 1024, 1024, 1024
 # 1 megabyte
 DEFAULT_MAXIMUM_FILE_SIZE = 1 * K * M
 
-# Faker.seed(0)
-# fake_json_list = []
-
-# print(fake_json_list)
 with open("data.json", "w") as f:
     while(os.stat("data.json").st_size < DEFAULT_MAXIMUM_FILE_SIZE):
         fake_json_list = (fake.json(data_columns={'ID': 'pyint',
